@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // var n= 0
+        // while(n<=50) {
+        //     n++;
+        // }
+        // alert(n)
+
+        // var sum = 0;
+        // var i = 1;
+        // while(i <= 100) {
+        //     sum += i;
+        //     i++;
+        // }
+        // alert(sum);
+
+        // var sum = 0;
+        // //  for(初始區塊;判斷;迴圈區塊) {與while相似，但須注意初始區塊與迴圈區塊的執行時機}
+        // for(var i=1 ;i <= 100;i++) {
+        //     sum += i;
+        // }
+        // alert(sum);
+        
+        // continue：強制進行下一次的迴圈
+        var x = 0;
+        for(var n =0;n<=100;n++) {
+            if(n%4==0) {
+                continue; //當n到4的倍數時，將會強制再回到for，並不會執行x++
+            }
+            x++;
+        }
+        alert(x)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

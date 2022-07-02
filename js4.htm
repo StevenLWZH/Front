@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // 內建函式--alert
+
+        // 函式的基礎
+        // 設計階段
+        // function test(message /*參數的名稱*/) {
+        //     // 函式的本體
+        //     alert(message);
+        // }
+
+        // function add(n1, n2) {
+        //     alert(n1+ n2);
+        //     return n1+n2;
+        // }
+
+        // 呼叫/使用階段
+        // test("123" /*傳入函式的參數資料*/); 
+        // test("456");
+
+        // add(3,4);
+        // add(5,10);
+
+        // var result = add(3,4);
+        // alert(result);
+        // 整合範例
+        function getSum(num) {
+            var sum = 0;
+            var n = 1;
+            while(n<=num) {
+                sum += n;
+                n++;
+            }
+            alert(sum);
+            return sum;
+        }
+        getSum(50);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

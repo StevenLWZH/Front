@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--meta name使網站到手機時，寬度大小不會被任意縮放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自我介紹</title>
+    <style type="text/css">
+        /*text-alig:設定文字位置*/
+        .head{
+            background-color: #003344; color: white; font-weight: bold;font-size: 30px;
+            text-align: center; padding: 10px;
+        }
+        .content{
+            width: 1000px; margin-left: auto; margin-right: auto;
+        }
+        /*display設定顯示模式，使方格不斷行。vertical-align設定垂直對齊(上方)。text-align使區塊內部文字置中。*/
+        .box{
+            width: 280px; padding: 10px; margin: 10px;background-color: white;
+            display: inline-block; vertical-align: top;
+            text-align: center;height: 150px; line-height: 30px;
+        }
+        .title{
+            font-weight: bold;
+        }
+        /*當使用者使用螢幕，且螢幕尺寸最大寬度為600px時(一般手機都是這大小)，套用下方的設置*/
+        @media screen and (max-width:600px){
+            .head{font-size: 24px;}
+            .content{width: 100%;text-align: center;}
+        }
+        /*寬度設100%，若寬度放不下將會自動往下排列*/
+    </style>
+</head>
+<body style="margin: 0px; background-color: #eee;">
+    <div class="head">賴王的自介</div>
+    <div class="content">
+        <div class="box">
+            <div class="title">我的基本資料</div>
+            <div>我是男生</div>
+            <div>我住台中</div>
+            <div>我要成為軟體工程師</div>
+        </div>
+        <div class="box">
+            <div class="title">我的興趣</div>
+            <div>唱RAP</div>
+        </div>
+        <div class="box">
+            <div class="title">與我聯絡</div>
+            <div>zxc0965386726@gmail.com</div>
+        </div>
+    </div>
+</body>
+</html>

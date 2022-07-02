@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function init() {
+            timer = document.getElementById("timer");
+            // window.setTimeout(countdown, 1000); // 毫秒為單位，1000表示一秒
+            window.setInterval(countdown, 1000); //表重複執行countdown，不必在countdown中回呼countdown
+        }
+
+        function countdown() {
+            timer.innerHTML = timer.innerHTML - 1;
+            if(timer.innerHTML > 0) {
+                // window.setTimeout(countdown, 1000);
+            } else{ // 網頁導向，當倒數完畢後進入網址
+                document.location="https://www.youtube.com/"
+            }
+        }
+    </script>
+</head>
+<body onload="init()">
+    <span id="timer">3</span>
+</body>
+</html>

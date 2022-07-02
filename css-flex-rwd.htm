@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Flexbox</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+    <style>
+        nav{
+            display: flex;
+        }
+        nav>.logo{
+            /*flex:none是沒有彈性，固定尺寸*/
+            flex: none;width: 100px;
+            background-color: aquamarine;
+        }
+        nav>.menu{
+            /*flex:auto是盡量把容器的空間塞滿*/
+            flex: auto;
+            background-color: blue;
+        }
+        nav>.user{
+            flex: none;width: 100px;
+            background-color: yellow;
+        }
+        /*flex-wrap: wrap使欄位在該換行的時候換行*/
+        main{
+            display: flex;flex-wrap: wrap;
+            justify-content: center;
+            background-color: aqua;
+        }
+        main>.item{
+            flex: none;
+            width: 270px;margin: 10px;
+            background-color: bisque;
+        }
+        @media (max-width:1200px){
+            main>.item{
+                width: 45%;
+            }
+        }
+        @media (max-width:500px){
+            main>.item{
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav >
+        <div class="logo">Logo</div>
+        <div class="menu">Menu</div>
+        <div class="user">User</div>
+    </nav>
+    <!--規劃：
+            (電腦螢幕)1200px 以上的規劃：4欄，固定尺寸
+            (平板)500px ~ 1200px 之間的規劃：2欄，彈性尺寸
+            (手機)500px 以下：1欄，彈性尺寸
+        -->
+    <main>
+        <div class="item">News 1</div>
+        <div class="item">News 2</div>
+        <div class="item">News 3</div>
+        <div class="item">News 4</div>
+    </main>
+</body>
+</html>

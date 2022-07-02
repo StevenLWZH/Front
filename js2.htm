@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        // var money = prompt("要提多少錢?","");
+        // if(money > 30000) {
+        //     alert("單日無法超過3萬");
+        // } else {
+        //     alert("請取鈔");
+        // }
+
+        // var n = prompt("input number?","");
+        // if(n > 500) {
+        //     alert(n+">500");
+        // } else if(n > 300){
+        //     alert(n+"> 300");
+        // } else {
+        //     alert(n+"<300");
+        // }
+        var n1 = prompt("n1?","");
+        var n2 = prompt("n2?","");
+        // 資料型態的轉換：把字串 => 數字
+        n1=Number(n1);n2=Number(n2);
+        var op = prompt("op?(+,-,*,/)","");
+        var result;
+        if (op == "+") {
+            result= n1 + n2;
+        } else if (op == "-") {
+            result= n1 - n2;
+        } else if (op == "*") {
+            result= n1 *n2;
+        } else if (op == "/") {
+            result= n1 / n2;
+        } else {
+            result="無效運算"
+        }
+        alert(result);
+</script>
+</head>
+<body>
+    
+</body>
+</html>

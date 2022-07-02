@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // 函式創造新的名稱空間
+        var x =9; // 外面稱為全域空間、全域變數
+        function test() {
+            var y = 5; // 內部為區域空間、區域變數
+            alert(y);
+        }
+        test();
+        alert(y); // 外部的程式碼，不能使用內部的變數
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

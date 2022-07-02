@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        /*標籤名稱選擇器*/
+        body{
+            font-size:20px;font-family:"微軟正黑體"
+        } 
+        /*對所有h3設定*/
+        h3{
+            font-size: 30px; text-decoration: underline;
+        }
+        /*class 選擇器*/ /*在.前面加div選取特定範圍，不然他會連ul都套用*/
+        div.content{
+            padding: 10px; border: 1px dashed #726;
+        }
+        /*id選擇器*/ /*前面需加#*/
+        #btn{
+            border: 1px solid #777;
+            background-color: rgb(150, 145, 145); padding: 5px;
+        }
+        /*虛擬選擇器：搭配其他選擇器使用*/ /*hover：虛擬選擇器。當滑鼠碰到則有變化*/
+        #btn:hover{
+            background-color: aquamarine;
+        }
+        /*focus ：當目標取得焦點(點進輸入框)時，套用一組設定*/
+        input:focus{
+            border: 10px solid #139;
+        }
+        /*階層式選擇器：搭配其他選擇器使用*/ /*li後面a*/
+        .favorite a{
+            color: #476;
+        }
+        .demo a{
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h3>常用瀏覽器</h3>
+    <ul class="favorite"> <!--用ul代表列表；li為當中的項目-->
+        <li><a href="http://www.google.com">Google</a></li> <!--利用a標籤將文字包裹，並利用href加入超連結-->
+        <li><a href="https://www.facebook.com/">Facebook</a></li>
+        <li><a href="https://www.dcard.tw/f">Dcard</a></li>
+    </ul>
+    <ul class="demo"> 
+        <li><a href="http://www.google.com">Google</a></li> <!--利用a標籤將文字包裹，並利用href加入超連結-->
+        <li><a href="https://www.facebook.com/">Facebook</a></li>
+        <li><a href="https://www.dcard.tw/f">Dcard</a></li>
+    </ul>
+    <h3>Resume</h3>
+    <div class="content">到底要不要買STEPN</div>
+    <h3>Chain</h3>
+    <div class="content">我還有Walken白嫖</div>
+    <h3>shose</h3>
+    <div class="content">但walken是免費</div>
+    <h3>reason</h3>
+    <div class="content">所以熱度應該不高</div>
+    <h3>connect</h3>
+    <div class="content">
+        填寫訊息 <input type="text" /> <button id="btn">送出</button>
+    </div>
+</body>
+</html>

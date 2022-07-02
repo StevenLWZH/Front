@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Flexbox</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+    <style>
+        nav{
+            display: flex;
+        }
+        nav>.logo{
+            /*flex:none是沒有彈性，固定尺寸*/
+            flex: none;width: 100px;
+            background-color: aquamarine;
+        }
+        nav>.menu{
+            /*flex:auto是盡量把容器的空間塞滿*/
+            flex: auto;
+            background-color: blue;
+        }
+        nav>.user{
+            flex: none;width: 100px;
+            background-color: yellow;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+        }
+        main>.item{
+            flex: none;
+            width: 300px;margin: 10px;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <nav >
+        <div class="logo">Logo</div>
+        <div class="menu">Menu</div>
+        <div class="user">User</div>
+    </nav>
+    <!--Flex 如何解決：並排(切欄)、水平對齊、垂直對齊的問題-->
+    <!--main 是容器。解決並排：在style設定display為flex，再於item中設定flex為none使其無法自動縮放。-->
+    <!--解決對齊：在justify-content中設定為center(置中)、flex-start(靠左)-->
+    <!--垂直對齊:align-items:center(靠中)、flex-start(靠上方)-->
+    <main>
+        <div class="item">News 1<br/>Today is a good day</div>
+        <div class="item">News 2</div>
+        <div class="item">News 3</div>
+    </main>
+</body>
+</html>

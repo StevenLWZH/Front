@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"></meta> <!--輸入charset，才可正常顯示中文(但我剛剛不輸入也可以)-->
+    <title>首頁</title> <!--網頁標題-->
+</head>
+<body> <!--body中才會顯示在網頁內-->
+    <h1>我的照片</h1> <!--h3就是3號標題(粗體且放大一點)；h1最大-->
+    <img src="tsla.png"/> <!--使用img可放圖片，src後放入影像位置，因網頁與檔案在同一資料夾，故可直接打檔名-->
+    <hr/> <!--利用hr在網頁中加水平線；本來式<hr></hr>但可簡化為<hr/>表示開頭與結束在同一位置，中間無文字-->
+    <h3>我的最愛</h3> <!--另一個標題-->
+    <ul> <!--用ul代表列表；li為當中的項目-->
+        <li><a href="http://www.google.com">Google</a></li> <!--利用a標籤將文字包裹，並利用href加入超連結-->
+        <li><a href="https://www.facebook.com/">Facebook</a></li>
+        <li><a href="https://www.dcard.tw/f">Dcard</a></li>
+    </ul>
+    <h3>MLB Baseball</h3>
+    <table border="1" width="400" cellpadding="5"> <!--用table代表要建立表格；用border決定格線型式；用width調整表格寬度；用cellpadding調整表格與字的距離-->
+        <tr> <!--表格的第一列-->
+            <td><b>Name</b></td> <!--表格的第一欄；利用b將文字改為粗體字-->
+            <td>Win</td> <!--表格的第二欄-->
+            <td>Lose</td> <!--表格的第三欄-->
+        </tr>
+        <tr>
+            <td><u>New York <b>Yankees</b></u></td> <!--利用u對文字加底線-->
+            <td>10</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Boston Red Sox</td>
+            <td>9</td>
+            <td>9</td>
+        </tr>
+    </table>
+</body>
+</html>

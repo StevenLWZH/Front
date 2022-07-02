@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // function over(element) {
+        //     element.style.color="red";
+        // }
+
+        // function out(element) {
+        //     element.style.color="black";
+        // }
+
+        // 用 Javascript 的程式，動態的註冊事件處理器(onclick="alert('clicked')"就是註冊事件處理器)
+        function init() {
+            var btn = document.getElementById("btn");
+            // 抓滑鼠點擊時的位置
+            var handler = function(e) {
+                alert(e.clientX+","+e.clientY);
+            }
+            // btn.onclick=function() {
+            //     alert("clicked");
+            // }
+
+            // var handler = function() {  //準備一個事件處理器 (對應事件的函式)
+            //     alert("Clicked");
+            // };
+            btn.addEventListener("click", handler); //btn.addEveneListener (事件的名稱,事件的處理器)
+            /*
+            1.使用者點擊按鈕，觸發 click 事件。
+            2.瀏覽器主動收集和事件有關的資訊，並製造出 Event Object 事件物件
+                 var eventObj=事件物件;
+            3.呼叫已經註冊的事件處理器 (事件處理函式)   
+                handler(eventObj);
+            */
+            document.addEventListener("keydown", function(e) { //匿名函式：用來直接當事件處理器
+                alert(e.keyCode);
+            })
+        }
+    </script>
+</head>
+<body onload="init()">
+    <button id ="btn">Click</button>
+    <!-- 當移動到文字上變顏色 -->
+    <!-- <span onmouseover="over(this)"
+    onmouseout="out(this)">Test</span> -->
+
+</body>
+</html>

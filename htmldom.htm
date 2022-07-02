@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // alert(window.screen.width+"x"+window.screen.height);
+        // function change () {
+        //     window.document.body.innerHTML ="Hello World"
+        // }
+
+        function change () {
+            var spanObj = document.getElementById("emotion");  //再利用document.getElementById來搜尋ID，以便後續修改內文與CSS
+            spanObj.innerHTML = "bad";
+            // 改CSS內容
+            spanObj.style.color="red";
+            spanObj.style.fontWeight="bold";
+            // spanObj.style.display="none"; // span內會被藏起來
+        }
+    </script>
+
+</head>
+<body>
+    <div>
+        <!--需在span中設定id，使程式碼能取得物件-->
+        Today is a <span id="emotion">good</span> day. Let's go fishing.
+    </div>
+    <!--onclick 表示點擊後呼叫change function-->
+    <button onclick="change();">Change</button>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*border-collapse 使2條線的框線變成1條線*/
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+        td{
+            border-bottom: 1px solid black; padding: 10px;
+        }
+        /*tr：表格中的第一列*/
+        tr:nth-child(1){
+            background-color: #7788a7; color: #ffffff;
+        }
+        /*表格中的第偶數列*/
+        tr:nth-child(even){
+            background-color: #e8e8e8;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr> 
+            <td>球隊</td> 
+            <td>勝</td> 
+            <td>敗</td> 
+        </tr>
+        <tr>
+            <td>紐約洋基隊</td> 
+            <td>10</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>波斯頓紅襪隊</td>
+            <td>9</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>金洲勇士隊</td>
+            <td>73</td>
+            <td>9</td>
+        </tr>
+    </table>
+</body>
+</html>
